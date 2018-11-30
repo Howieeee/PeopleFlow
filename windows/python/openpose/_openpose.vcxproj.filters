@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Howie\Documents\GitHub\peopleFlow\python\openpose\_openpose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Howie\Documents\GitHub\peopleFlow\python\openpose\openpose.py" />
+    <None Include="C:\Users\Howie\Documents\GitHub\peopleFlow\python\openpose\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{D02B9CD9-0968-30CA-B41A-B7D1CB3C1EA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

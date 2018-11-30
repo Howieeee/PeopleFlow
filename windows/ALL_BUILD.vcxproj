@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5CE96644-B88E-3526-A175-A37FBD33F437}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Howie\Documents\GitHub\peopleFlow\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\opencv\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe3rdparty\include\boost-1_61;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Howie\Documents\GitHub\peopleFlow\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\opencv\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe\include2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe3rdparty\include\boost-1_61;C:\Users\Howie\Documents\GitHub\peopleFlow\3rdparty\windows\caffe3rdparty\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_add_module\1_custom_post_processing.vcxproj">
+      <Project>{2C99E488-9220-3D0D-9220-9FAC1BB28CE6}</Project>
+      <Name>1_custom_post_processing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_pose\1_extract_from_image.vcxproj">
+      <Project>{9C0F8AF9-A6B6-3B06-9234-8BE1E62CF1A1}</Project>
+      <Name>1_extract_from_image</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_thread\1_openpose_read_and_display.vcxproj">
+      <Project>{3C5E4971-22EE-3F63-86DB-8950C6596F63}</Project>
+      <Name>1_openpose_read_and_display</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_wrapper\1_user_synchronous_postprocessing.vcxproj">
+      <Project>{360AED60-F3C4-3B9F-B1DE-901E30F2716E}</Project>
+      <Name>1_user_synchronous_postprocessing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_pose\2_extract_pose_or_heatmat_from_image.vcxproj">
+      <Project>{F8A6F7E4-ACA0-3E44-B2DC-DB592D223274}</Project>
+      <Name>2_extract_pose_or_heatmat_from_image</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_thread\2_user_processing_function.vcxproj">
+      <Project>{49091676-2FB8-3F87-BFEB-A4CF9CA91081}</Project>
+      <Name>2_user_processing_function</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_wrapper\2_user_synchronous_input.vcxproj">
+      <Project>{C11E519A-BCDF-3969-9E4C-6B9B2DBA1D17}</Project>
+      <Name>2_user_synchronous_input</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_thread\3_user_input_processing_and_output.vcxproj">
+      <Project>{2EBF3575-F2F1-391B-8172-1867EB82AAFD}</Project>
+      <Name>3_user_input_processing_and_output</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_wrapper\3_user_synchronous_output.vcxproj">
+      <Project>{02FC356E-0D46-3B90-A733-7608E96183EF}</Project>
+      <Name>3_user_synchronous_output</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_thread\4_user_input_processing_output_and_datum.vcxproj">
+      <Project>{3786CC08-543F-3C15-9790-260AD85BFA47}</Project>
+      <Name>4_user_input_processing_output_and_datum</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_wrapper\4_user_synchronous_all.vcxproj">
+      <Project>{863871A5-9542-363B-B275-6A175C43B7E9}</Project>
+      <Name>4_user_synchronous_all</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_wrapper\5_user_asynchronous.vcxproj">
+      <Project>{B5AAC76F-7C10-348A-A39C-C326C144DB2A}</Project>
+      <Name>5_user_asynchronous</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\tutorial_wrapper\6_user_asynchronous_output.vcxproj">
+      <Project>{71519216-2ADA-3D8B-845F-4D9D837955AE}</Project>
+      <Name>6_user_asynchronous_output</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\calibration\Calibration.vcxproj">
+      <Project>{804890D7-6F47-3A53-8A35-5CC3F7ADF171}</Project>
+      <Name>Calibration</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\examples\openpose\OpenPoseDemo.vcxproj">
+      <Project>{94723E64-24AC-33E0-B36E-71BF0A9B6014}</Project>
+      <Name>OpenPoseDemo</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\python\openpose\_openpose.vcxproj">
+      <Project>{4D557DC0-F592-3959-BFC1-CEF224E9C41D}</Project>
+      <Name>_openpose</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Howie\Documents\GitHub\peopleFlow\windows\src\openpose\openpose.vcxproj">
+      <Project>{7DE89728-8CDD-395A-B654-166483FFA175}</Project>
+      <Name>openpose</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
